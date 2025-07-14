@@ -17,6 +17,7 @@ Feel free to explore and get in touch!
 <summary> PGP key</summary>
 <pre><code>
 -----BEGIN PGP PUBLIC KEY BLOCK-----
+
 mDMEaHPzXxYJKwYBBAHaRw8BAQdAR+i8BWVpGtbZuuBrtF6ENDcsmbZROioqzUxO
 88pmZQW0NU1ldmVuIEplYW5uZS1Sb3NlIDxtZXZlbi5qZWFubmUtcm9zZUB1bW9u
 dHBlbGxpZXIuZnI+iJkEExYKAEEWIQTGrDPNlE8218IYj+DEIiGxZ5e2jQUCaHPz

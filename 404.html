@@ -1,0 +1,124 @@
+---
+permalink: /404.html
+layout: default
+title: Not found
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Non Trouvée</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: monospace;
+            text-align: center;
+            overflow: hidden;
+        }
+        #animation {
+            margin-top: 50px;
+        }
+        #message {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="animation">
+        <pre id="ascii-art"></pre>
+    </div>
+    <div id="message">
+        <h1>404 - Not Found</h1>
+        <p>The truth is out there… but not here.</p>
+    </div>
+
+    <script>
+        const earth = [
+            "                                                ",
+            "               -o#&&*''''?d:>b\_                ",
+            "          _o/'`''  '',, dMF9MMMMMHo_            ",
+            "       .o&#'        `'MbHMMMMMMMMMMMHo.         ",
+            "     .o''' '         vodM*$&&HMMMMMMMMMM?.       ",
+            "    ,'              $M&ood,~'`(&##MMMMMMH\      ",
+            "   /               ,MMMMMMM#b?#bobMMMMHMMML     ",
+            "  &              ?MMMMMMMMMMMMMMMMM7MMM$R*Hk    ",
+            " ?$.            :MMMMMMMMMMMMMMMMMMM/HMMM|`*L   ",
+            "|               |MMMMMMMMMMMMMMMMMMMMbMH'   T,  ",
+            "$H#:            `*MMMMMMMMMMMMMMMMMMMMb#}'  `?  ",
+            "]MMH#             ''*''''*#MMMMMMMMMMMMM'    -  ",
+            "MMMMMb_                   |MMMMMMMMMMMP'     :  ",
+            "HMMMMMMMHo                 `MMMMMMMMMT       .  ",
+            "?MMMMMMMMP                  9MMMMMMMM}       -  ",
+            "-?MMMMMMM                  |MMMMMMMMM?,d-    '  ",
+            " :|MMMMMM-                 `MMMMMMMT .M|.   :   ",
+            "  .9MMM[                    &MMMMM*' `'    .    ",
+            "   :9MMk                    `MMM#'        -     ",
+            "     &M}                     `          .-      ",
+            "      `&.                             .         ",
+            "        `~,   .                     ./          ",
+            "            . _                  .-             ",
+            "              '`--._,dd###pp='''                "
+        ];
+
+        const ufo = [
+            "  ,-~~~~~-,",
+            "  |(     )|",
+            "  |( 6 6 )|",
+            "  | \\ ' / |",
+            "  |  )=(  |",
+            ".--        --.",
+            "(    404     )",
+            " \\.-~~~~~~-./"
+        ];
+
+   let position = -ufo[0].length;
+    const asciiArt = document.getElementById('ascii-art');
+
+    function updateAnimation() {
+      let output = [];
+      const ufoStartLine = earth.length - ufo.length - 2;
+
+      for (let i = 0; i < earth.length; i++) {
+        let line = earth[i];
+
+        if (i >= ufoStartLine && i < ufoStartLine + ufo.length) {
+          let ufoLine = ufo[i - ufoStartLine];
+          let pos = position;
+          let visiblePart = ufoLine;
+
+          if (pos < 0) {
+            // Vaisseau entre à gauche : tronquer le début
+            visiblePart = ufoLine.slice(-pos);
+            const after = line.slice(visiblePart.length);
+            line = visiblePart + after;
+          } else {
+            // Vaisseau visible au milieu
+            if (pos + ufoLine.length > line.length) {
+              const overflow = (pos + ufoLine.length) - line.length;
+              visiblePart = ufoLine.slice(0, ufoLine.length - overflow);
+            }
+
+            const before = line.slice(0, pos);
+            const after = line.slice(pos + visiblePart.length);
+            line = before + visiblePart + after;
+          }
+        }
+
+        output.push(line);
+      }
+
+      asciiArt.textContent = output.join('\n');
+      position++;
+
+      if (position > earth[0].length) {
+        position = -ufo[0].length;
+      }
+    }
+
+    setInterval(updateAnimation, 150);
+  </script>
+</body>
+</html>
