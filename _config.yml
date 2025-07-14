@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Personnal Page 
-description: Personnal page
+title: void() 
+description: Thoughts, code, and experiments in open source and digital security. 
 show_downloads: false 
 google_analytics:
 

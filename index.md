@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Accueil
+title: Index 
 ---
 
-[Accueil](/) | [À propos](/about/)
+[Index](/) | [About](/about/)
 
 # Hello
