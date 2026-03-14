@@ -9,7 +9,7 @@ permalink: /about/
 Hello and welcome to my personal page!
 
 I'm passionate about technology, open source and digital security.
-Here, I share my projects, ideas, and a bit about what drives me as a developer and a security ethusiast.
+Here, I share my projects, ideas, and a bit about what drives me as a developer and a security enthusiast.
 
 Feel free to explore and get in touch!
 
