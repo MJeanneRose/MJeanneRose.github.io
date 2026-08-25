@@ -11,7 +11,7 @@ tags: RE, binary, GDB, Ghidra, cracking, rootme, reverse
 ><cite>— Unknown; quoted in *Learning Linux Binary Analysis*, Ryan “elfmaster” O'Neill</cite>
 
 Here is my roadmap to improve reverse engineering skills.
-Some basic knowledge of C, assembly and OS are assumed.
+Some basic knowledge of C, assembly and Operating System is assumed.
 
 The roadmap is divided into 2 parts :
 1. Understanding executable file format and the first steps in reverse engineering
@@ -19,7 +19,7 @@ The roadmap is divided into 2 parts :
 
 Part 1 is a collection of foundations and references. Part 2 is the actual learning path.
 
-## Part 1 : Understanding executable file format and the first step in reverse engineering
+## Part 1 : Understanding executable file format and the first steps in reverse engineering
 
 - Warm-up: [Caichinger - elf](https://www.caichinger.com/elf)
 
@@ -27,8 +27,7 @@ Part 1 is a collection of foundations and references. Part 2 is the actual learn
 
 - Toolchain, executable autopsy (French): 
 <details>
-<summary>Telecom-Paris (click me)</summary>  
-Chaîne de compilation, Genèse et autopsie des exécutables  
+<summary>Telecom-Paris - Chaîne de compilation, Genèse et autopsie des exécutables</summary>    
 ⓒ 2020 Alexis Polti  
 ⓒ 2021-2024 Samuel Tardieu  
 </details>
@@ -45,7 +44,7 @@ Chaîne de compilation, Genèse et autopsie des exécutables
 
 - Practical training: [pwn.college](https://pwn.college/welcome/welcome/)
 
-If some knowledge are missing or you want to dig deep into a specific subject you still can use meta keyword while searching : 
+If you are missing some knowledge or you want to dig deep into a specific subject you still can use meta keyword while searching : 
 
 > site:edu <em>subject</em>
 

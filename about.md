@@ -14,7 +14,7 @@ Here, I share my projects, ideas, and a bit about what drives me as a developer 
 Feel free to explore and get in touch!
 
 <details>
-<summary> PGP key</summary>
+<summary>PGP key</summary>
 <pre><code>
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
